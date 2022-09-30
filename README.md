@@ -1,3 +1,4 @@
 # APP_teste
 
-api node com teste
+Os clientes, precisam resalizar AGENDAMENTOS
+so que eles nao conseguem saber os horarios disponiveis
