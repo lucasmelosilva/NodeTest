@@ -18,6 +18,11 @@ export class Appointment {
   constructor(props: AppointmentProps) {
     this.props = props;
 
-    if (props.endsAt <= props.startsAt) throw new Error("End date invalid");
+    const { startsAt, endsAt } = props;
+
+    const nowDate = new Date();
+
+    if (startsAt <= nowDate) throw new Error("Start date invalid");
+    if (endsAt <= startsAt) throw new Error("End date invalid");
   }
 }
