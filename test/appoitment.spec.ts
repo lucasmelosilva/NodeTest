@@ -18,7 +18,7 @@ test("create an appointment", () => {
   expect(appointment.customer).toEqual("John Doe");
 });
 
-test("cannot create an appointmemt with end date before start date", () => {
+test("cannot create an appointmemt with end date before shtart date", () => {
   const startsAt = new Date();
   const endsAt = new Date();
 
